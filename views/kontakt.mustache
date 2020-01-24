@@ -1,0 +1,140 @@
+{{>tittle}}
+
+	<link rel="icon" type="image/png" href="images/icons/home-boxed-logo.png"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->	
+	<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+<!--===============================================================================================-->	
+	<link rel="stylesheet" type="text/css" href="vendor/daterangepicker-bootstrap/daterangepicker.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/anims-ition/dist/css/animsition.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="css/animate.css">
+<!--===============================================================================================-->
+</head>
+<body>
+<div class="animsition">	
+{{>header}}
+	<!-- Title contact page 
+	<section>
+		<div class="bg-title-sub-page bg-menu-page-01">
+			<div class="wrap-title-sub-page">
+				<h2 class="title-l">Kontakt</h2>
+				<h6 class="title-s">skontaktuj się z nami</h6>
+			</div>
+		</div>
+	</section>
+-->
+	<section class="content-contact-us">
+		<div class="container">
+			<div class="row">
+				<div class="responsive col-md-10 col-lg-6">
+					<h6 class="medium-text">Kontakt</h6>
+					<h3 class="larg-text">Napisz lub zadzwoń</h3>
+					
+					
+					 <ul>
+					 <li>TELEFON: 76 844 70 69</li>
+					 <li>E-MAIL: <a href="mailto:info@colucci.pl">info@colucci.pl</a></li>
+					 </ul>
+
+					 <ul>
+						<li>SIEDZIBA: 59-300 Lubin, Sosnowa 8</li>
+						<li>SERWIS / SPRZEDAŻ: 59-300 Lubin, Gola 3G</li>
+					 </ul>
+					
+					<ul>	
+						<li>Colucci Polska Sp. z o.o.</li>
+					
+						<li>KRS: 0000177064, NIP: 692-22-28-720, REGON: 390616240</li>
+						
+						<li class="follow-us">ŚLEDŹ NAS NA: 
+									<a href="https://www.facebook.com/Colucci-Polska-111380610396120"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+				<a href="https://www.linkedin.com/company/37376353"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+				<a href="https://www.instagram.com/colucci_automaty/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+				<a href="https://twitter.com/ColucciPolska"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+				<a href="https://www.youtube.com/channel/UCfoA7vXtQnN_zfXwVTP1QUA"><i class="fa fa-youtube" aria-hidden="true"></i></a>
+						</li>
+					</ul>
+				</div>
+				<div class="responsive col-md-10 col-lg-6">
+					<div class="messages" id="status"></div>
+					<form class="contact-form" method="post" action="includes/contact-form.php" name="contact" id="contact-form">
+						<div class="row">
+							<div class="wrap-input-contact col-left col-12 col-sm-6 wow fadeInDown" data-wow-delay="0.2s">
+								<input class="input-form small-text" type="text" id="name" name="name" placeholder="Imię">
+								<span class="tooltip-validate special small-text">Imię jest wymagane</span>
+								<span class="symbol-validate special"><i class="fa fa-exclamation" aria-hidden="true"></i></span>
+							</div>
+							<div class="wrap-input-contact col-right col-12 col-sm-6 wow fadeInDown" data-wow-delay="0.2s">
+								<input class="input-form small-text" type="text" id="email" name="email" placeholder="E-mail">
+								<span class="tooltip-validate small-text">Adres email nieprawidłowy</span>
+								<span class="symbol-validate"><i class="fa fa-exclamation" aria-hidden="true"></i></span>
+							</div>
+
+							<div class="wrap-input-contact col-left col-12 col-sm-6 wow fadeInDown" data-wow-delay="0.2s">
+								<input class="input-form small-text" type="text" id="number" name="number" placeholder="Numer telefonu">
+								<span class="tooltip-validate special small-text">Numer telefonu jest wymagany</span>
+								<span class="symbol-validate special"><i class="fa fa-exclamation" aria-hidden="true"></i></span>
+							</div>
+							<div class="wrap-input-contact col-right col-12 col-sm-6 wow fadeInDown" data-wow-delay="0.2s">
+								<input class="input-form small-text" type="text" id="tittle" name="tittle" placeholder="Tytuł">
+							</div>
+							
+							
+							<div class="wrap-input-contact col-12 wow fadeInDown" data-wow-delay="0.6s">
+								<textarea class="input-form small-text" id="msg" name="msg" placeholder="Wiadomość"></textarea>
+								<span class="tooltip-validate small-text">Proszę wpisać wiadomość</span>
+								<span class="symbol-validate"><i class="fa fa-exclamation" aria-hidden="true"></i></span>
+							</div>
+							
+							<div class="responsive col-6 col-sm-4 wow fadeInDown" data-wow-delay="0.8s">
+								<button class="btn-with-bg au-btn" type="submit" id="contactBtn">WYŚLIJ</button>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+
+			<div class="map wow zoomIn">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d53500.88655414456!2d16.16581714759847!3d51.43975521945881!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470f6f579c7002ff%3A0xe29fd7fb64d20df9!2sColucci-Polska%20Sp.%20z%20o.o.%20Automaty%20sprzedaj%C4%85ce!5e0!3m2!1spl!2spl!4v1579170546383!5m2!1spl!2spl" width="100%" height="500" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+			</div>
+		</div>
+	</section>
+
+{{>footer}}
+
+<!--===============================================================================================-->	
+	<script type="text/javascript" src="vendor/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+	<script type="text/javascript" src="vendor/wow/wow.min.js"></script>
+
+	<script type="text/javascript">
+		new WOW().init();
+	</script>
+<!--===============================================================================================-->
+	<script type="text/javascript" src="vendor/animsition/dist/js/animsition.min.js"></script>
+<!--===============================================================================================-->
+	<script type="text/javascript" src="vendor/bootstrap/js/popper.min.js"></script>
+	<script type="text/javascript" src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->	
+	<script type="text/javascript" src="vendor/select2/select2.min.js"></script>
+<!--===============================================================================================-->
+	<script type="text/javascript" src="vendor/daterangepicker-bootstrap/moment.min.js"></script>
+	<script type="text/javascript" src="vendor/daterangepicker-bootstrap/daterangepicker.js"></script>
+<!--===============================================================================================-->
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAKFWBqlKAGCeS1rMVoaNlwyayu0e0YRes"></script>
+	<script src="js/map-custom.js"></script>
+<!--===============================================================================================-->
+	<script src="js/main.js"></script>
+	<script src="js/contact.js"></script>
+</div>
+</body>
+</html>
