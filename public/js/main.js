@@ -145,6 +145,8 @@
 		}
 	});
 
+	/*==============================================[ resize menu bar ]==*/
+
 	$(document).on("scroll", function() {
 
         if($(document).scrollTop()>0) {
