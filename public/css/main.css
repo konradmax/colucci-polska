@@ -160,7 +160,6 @@ iframe {
 	background-color: #222222;
 	height: 70px;
 	
-
 }
 
 .wrap_header1 {
@@ -172,10 +171,12 @@ iframe {
 	
 }
 
+
+
 header {
 	position: fixed;
 	z-index: 2000;
-	width: 100%;
+	width: 100%;	
 }
 
 
