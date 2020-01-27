@@ -445,6 +445,7 @@ header {
 	height: 55px;
 	background-color: white;
 	display: none;
+	box-shadow: 0px 0px 5px 0px #000000;
 }
 /*------------------------------------------------------------------- logo mobile ---*/
 .logo-mobile {
@@ -495,6 +496,7 @@ header {
 	display: none;
 	padding-top: 15px;
 	padding-bottom: 15px;
+	opacity: 90%;
 }
 
 .side-menu {

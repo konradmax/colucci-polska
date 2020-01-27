@@ -7,7 +7,7 @@ const router = vertex.router()
 router.get('/', (req, res) => {
 
 	const data = {
-	title: 'COLUCCI'
+	title: 'Colucci Polska Sp. z o.o. Automaty Sprzedające Lubin'
 	}
 
 	res.render('index', data)
@@ -16,7 +16,7 @@ router.get('/', (req, res) => {
 router.get('/ekspresy', (req, res) => {
 
 	const data = {
-	title: 'COLUCCI'
+	title: 'Colucci Polska Sp. z o.o. Automaty Sprzedające Lubin'
 	}
 
 	res.render('ekspresy', data)
@@ -27,7 +27,7 @@ router.get('/ekspresy', (req, res) => {
 router.get('/o-nas', (req, res) => {
 
 	const data = {
-	title: 'COLUCCI'
+	title: 'Colucci Polska Sp. z o.o. Automaty Sprzedające Lubin'
 	}
 
 	res.render('o-nas', data)
@@ -36,7 +36,7 @@ router.get('/o-nas', (req, res) => {
 router.get('/kontakt', (req, res) => {
 
 	const data = {
-	title: 'COLUCCI'
+	title: 'Colucci Polska Sp. z o.o. Automaty Sprzedające Lubin'
 	}
 
 	res.render('kontakt', data)
@@ -45,7 +45,7 @@ router.get('/kontakt', (req, res) => {
 router.get('/automaty', (req, res) => {
 
 	const data = {
-	title: 'COLUCCI'
+	title: 'Colucci Polska Sp. z o.o. Automaty Sprzedające Lubin'
 	}
 
 	res.render('automaty', data)
@@ -54,7 +54,7 @@ router.get('/automaty', (req, res) => {
 router.get('/dystrybutory', (req, res) => {
 
 	const data = {
-	title: 'COLUCCI'
+	title: 'Colucci Polska Sp. z o.o. Automaty Sprzedające Lubin'
 	}
 
 	res.render('dystrybutory', data)
@@ -63,7 +63,7 @@ router.get('/dystrybutory', (req, res) => {
 router.get('/pd-xxoc', (req, res) => {
 
 	const data = {
-	title: 'COLUCCI'
+	title: 'Colucci Polska Sp. z o.o. Automaty Sprzedające Lubin'
 	}
 
 	res.render('pd-xxoc', data)
@@ -72,7 +72,7 @@ router.get('/pd-xxoc', (req, res) => {
 router.get('/pd-ec', (req, res) => {
 
 	const data = {
-	title: 'COLUCCI'
+	title: 'Colucci Polska Sp. z o.o. Automaty Sprzedające Lubin'
 	}
 
 	res.render('pd-ec', data)
@@ -81,7 +81,7 @@ router.get('/pd-ec', (req, res) => {
 router.get('/pd-xsgrande', (req, res) => {
 
 	const data = {
-	title: 'COLUCCI'
+	title: 'Colucci Polska Sp. z o.o. Automaty Sprzedające Lubin'
 	}
 
 	res.render('pd-xsgrande', data)
@@ -90,7 +90,7 @@ router.get('/pd-xsgrande', (req, res) => {
 router.get('/pd-larheaec', (req, res) => {
 
 	const data = {
-	title: 'COLUCCI'
+	title: 'Colucci Polska Sp. z o.o. Automaty Sprzedające Lubin'
 	}
 
 	res.render('pd-larheaec', data)
@@ -99,7 +99,7 @@ router.get('/pd-larheaec', (req, res) => {
 router.get('/pd-larheagrande', (req, res) => {
 
 	const data = {
-	title: 'COLUCCI'
+	title: 'Colucci Polska Sp. z o.o. Automaty Sprzedające Lubin'
 	}
 
 	res.render('pd-larheagrande', data)
@@ -108,7 +108,7 @@ router.get('/pd-larheagrande', (req, res) => {
 router.get('/pd-kalea', (req, res) => {
 
 	const data = {
-	title: 'COLUCCI'
+	title: 'Colucci Polska Sp. z o.o. Automaty Sprzedające Lubin'
 	}
 
 	res.render('pd-kalea', data)
@@ -117,7 +117,7 @@ router.get('/pd-kalea', (req, res) => {
 router.get('/pd-kreatouch', (req, res) => {
 
 	const data = {
-	title: 'COLUCCI'
+	title: 'Colucci Polska Sp. z o.o. Automaty Sprzedające Lubin'
 	}
 
 	res.render('pd-kreatouch', data)
@@ -126,7 +126,7 @@ router.get('/pd-kreatouch', (req, res) => {
 router.get('/pd-koroprime', (req, res) => {
 
 	const data = {
-	title: 'COLUCCI'
+	title: 'Colucci Polska Sp. z o.o. Automaty Sprzedające Lubin'
 	}
 
 	res.render('pd-koroprime', data)
@@ -135,7 +135,7 @@ router.get('/pd-koroprime', (req, res) => {
 router.get('/pd-korintoprime', (req, res) => {
 
 	const data = {
-	title: 'COLUCCI'
+	title: 'Colucci Polska Sp. z o.o. Automaty Sprzedające Lubin'
 	}
 
 	res.render('pd-korintoprime', data)
@@ -144,7 +144,7 @@ router.get('/pd-korintoprime', (req, res) => {
 router.get('/pd-luce', (req, res) => {
 
 	const data = {
-	title: 'COLUCCI'
+	title: 'Colucci Polska Sp. z o.o. Automaty Sprzedające Lubin'
 	}
 
 	res.render('pd-luce', data)
@@ -153,7 +153,7 @@ router.get('/pd-luce', (req, res) => {
 router.get('/pd-lucex2', (req, res) => {
 
 	const data = {
-	title: 'COLUCCI'
+	title: 'Colucci Polska Sp. z o.o. Automaty Sprzedające Lubin'
 	}
 
 	res.render('pd-lucex2', data)
@@ -162,7 +162,7 @@ router.get('/pd-lucex2', (req, res) => {
 router.get('/pd-lucezero', (req, res) => {
 
 	const data = {
-	title: 'COLUCCI'
+	title: 'Colucci Polska Sp. z o.o. Automaty Sprzedające Lubin'
 	}
 
 	res.render('pd-lucezero', data)
@@ -171,7 +171,7 @@ router.get('/pd-lucezero', (req, res) => {
 router.get('/pd-lucesnack', (req, res) => {
 
 	const data = {
-	title: 'COLUCCI'
+	title: 'Colucci Polska Sp. z o.o. Automaty Sprzedające Lubin'
 	}
 
 	res.render('pd-lucesnack', data)
@@ -181,7 +181,7 @@ router.get('/pd-lucesnack', (req, res) => {
 router.get('/pd-lucezerosnack', (req, res) => {
 
 	const data = {
-	title: 'COLUCCI'
+	title: 'Colucci Polska Sp. z o.o. Automaty Sprzedające Lubin'
 	}
 
 	res.render('pd-lucezerosnack', data)
@@ -190,7 +190,7 @@ router.get('/pd-lucezerosnack', (req, res) => {
 router.get('/pd-gsnack', (req, res) => {
 
 	const data = {
-	title: 'COLUCCI'
+	title: 'Colucci Polska Sp. z o.o. Automaty Sprzedające Lubin'
 	}
 
 	res.render('pd-gsnack', data)
@@ -199,7 +199,7 @@ router.get('/pd-gsnack', (req, res) => {
 router.get('/pd-whp850', (req, res) => {
 
 	const data = {
-	title: 'COLUCCI'
+	title: 'Colucci Polska Sp. z o.o. Automaty Sprzedające Lubin'
 	}
 
 	res.render('pd-whp850', data)
@@ -208,7 +208,7 @@ router.get('/pd-whp850', (req, res) => {
 router.get('/pd-whp300', (req, res) => {
 
 	const data = {
-	title: 'COLUCCI'
+	title: 'Colucci Polska Sp. z o.o. Automaty Sprzedające Lubin'
 	}
 
 	res.render('pd-whp300', data)
@@ -217,7 +217,7 @@ router.get('/pd-whp300', (req, res) => {
 router.get('/pd-wfp2200', (req, res) => {
 
 	const data = {
-	title: 'COLUCCI'
+	title: 'Colucci Polska Sp. z o.o. Automaty Sprzedające Lubin'
 	}
 
 	res.render('pd-wfp2200', data)
@@ -226,7 +226,7 @@ router.get('/pd-wfp2200', (req, res) => {
 router.get('/produkty', (req, res) => {
 
 	const data = {
-	title: 'COLUCCI'
+	title: 'Colucci Polska Sp. z o.o. Automaty Sprzedające Lubin'
 	}
 
 	res.render('produkty', data)

@@ -147,7 +147,7 @@
 
 	$(document).on("scroll", function() {
 
-        if($(document).scrollTop()>70 || window.innerWidth < 1100) {
+        if($(document).scrollTop()>0) {
 			$(".wrap_header").removeClass("wrap_header").addClass("wrap_header1");
 			$("ul.main_menu").removeClass("main_menu").addClass("main_menu_small")
 			$('.icon-header').css('line-height','50px');

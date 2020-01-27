@@ -6,8 +6,8 @@
         /* initialize the slider based on the Slider's ID attribute */
         jQuery('#rev_slider_1').show().revolution({
             
-            responsiveLevels: [1200, 992, 768, 576],
-            gridwidth:[1200, 992, 768, 576],
+            responsiveLevels: [1200, 992, 768, 676],
+            gridwidth:[1200, 992, 768, 676],
             delay: 5000,
             /* options are 'auto', 'fullwidth' or 'fullscreen' */
             /* options that disable autoplay */
