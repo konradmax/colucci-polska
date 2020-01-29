@@ -66,7 +66,7 @@
 				</div>
 				<div class="responsive col-md-10 col-lg-6">
 					<div class="messages" id="status"></div>
-					<form class="contact-form" method="post" action="includes/contact-form.php" name="contact" id="contact-form">
+						<form class="contact-form" name="contact" id="contact-form">
 						<div class="row">
 							<div class="wrap-input-contact col-left col-12 col-sm-6 wow fadeInDown" data-wow-delay="0.2s">
 								<input class="input-form small-text" type="text" id="name" name="name" placeholder="Imię">
@@ -81,8 +81,6 @@
 
 							<div class="wrap-input-contact col-left col-12 col-sm-6 wow fadeInDown" data-wow-delay="0.2s">
 								<input class="input-form small-text" type="text" id="number" name="number" placeholder="Numer telefonu">
-								<span class="tooltip-validate special small-text">Numer telefonu jest wymagany</span>
-								<span class="symbol-validate special"><i class="fa fa-exclamation" aria-hidden="true"></i></span>
 							</div>
 							<div class="wrap-input-contact col-right col-12 col-sm-6 wow fadeInDown" data-wow-delay="0.2s">
 								<input class="input-form small-text" type="text" id="tittle" name="tittle" placeholder="Tytuł">
@@ -94,11 +92,15 @@
 								<span class="tooltip-validate small-text">Proszę wpisać wiadomość</span>
 								<span class="symbol-validate"><i class="fa fa-exclamation" aria-hidden="true"></i></span>
 							</div>
-							
-							<div class="responsive col-6 col-sm-4 wow fadeInDown" data-wow-delay="0.8s">
-								<button class="btn-with-bg au-btn" type="submit" id="contactBtn">formularz nieczynny</button>
+							<div class="captcha wow fadeInDown" data-wow-delay="0.6s">
+								<div class="g-recaptcha" data-sitekey="6LcZUNMUAAAAALjjNo8ZU2ZJIgsbZWJ56WoyndoQ" data-callback="recaptcha"></div>
 							</div>
+							<div class="responsive col-6 col-sm-5 wow fadeInDown" data-wow-delay="0.8s">
+								<button class="btn-with-bg au-btn" type="submit" id="contactBtn">wyślij</button>
+							</div>
+								
 						</div>
+						
 					</form>
 				</div>
 			</div>
@@ -135,6 +137,15 @@
 <!--===============================================================================================-->
 	<script src="js/main.js"></script>
 	<script src="js/contact.js"></script>
+
+
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+
+<script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit"
+    async defer>
+</script>
+
 </div>
 </body>
 </html>

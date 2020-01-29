@@ -1,62 +1,11 @@
 
 
-(function ($) {
-    // USE STRICT
-    "use strict";
-
-    $(document).ready(function () {
-
-        var contactForm = $('#contact-form');
-
-        contactForm.on('submit', function (e) {
-            window.setTimeout(function () {
-                var errors = $('.has-error');
-                if (errors.length) {
-                    $('html, body').animate({scrollTop: 150}, 500);
-                }
-            }, 0);
-
-            // if the validator does not prevent form submit
-            if (!e.isDefaultPrevented()) {
-                var url = "includes/contact-form.php";
-
-                // POST values in the background the the script URL
-                $.ajax({
-                    type: "POST",
-                    url: url,
-                    data: $(this).serialize(),
-                    success: function (data)
-                    {
-                        // data = JSON object that contact.php returns
-                        var result = JSON.parse(data);
-                        console.log(result);
-
-                        // we recieve the type of the message: success x danger and apply it to the
-                        var messageAlert = 'alert-' + result.type;
-                        var messageText = result.message;
-
-                        // let's compose Bootstrap alert box HTML
-                        var alertBox = '<div class="alert ' + messageAlert + ' alert-dismissable"><button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>' + messageText + '</div>';
-
-                        // If we have messageAlert and messageText
-                        if (messageAlert && messageText) {
-                            // inject the alert to .messages div in our form
-                            $('.messages').html(alertBox);
-                            // empty the form
-                            contactForm[0].reset();
-                        }
-                    }
-                });
-                return false;
-            }
-        });
-
-    });
-
-})(jQuery);
 
 
 /*=================================================================== Validate ===*/
+let recaptchaCalled = false;
+
+
 function showValidate (input) {
     $(input).next('.tooltip-validate').addClass('show-tooltip');
     $(input).next().next('.symbol-validate').css('display','block');
@@ -67,7 +16,7 @@ function hideValidate (input) {
     $(input).next().next('.symbol-validate').css('display','none');
 }
 
-$('#contact-form').on('submit',function(){
+function validateForm() {
     var check = true;
 
     if($('#name').val().trim() == ''){
@@ -95,7 +44,51 @@ $('#contact-form').on('submit',function(){
         hideValidate($('#email'));
     }
 
-    return check;
+
+    return check && recaptchaCalled;
+}
+
+function recaptcha() {
+    recaptchaCalled = true;
+}
+
+function sendEmail(data) {
+    console.log('nowy');
+    $.ajax({
+        url: 'api/email',
+        dataType: 'json',
+        type: 'get',
+        contentType: 'application/json',
+        data: `data=${JSON.stringify(data)}`,
+        processData: false,
+        success: function( data, textStatus, jQxhr ){
+            console.log(data);
+            alert("Wiadomość wysłana!");
+            $("#contact-form")[0].reset();
+        },
+        error: function( jqXhr, textStatus, errorThrown ){
+            console.log( errorThrown );
+            alert("Coś poszło nie tak..");
+        }
+    });
+}
+
+$('#contact-form').on('submit',function(){
+    const formValid = validateForm();
+
+    if (formValid) {
+      const data = {
+          name: $('#contact-form input[name=name]').val(),
+          email: $('#contact-form input[name=email]').val(),
+          telephone: $('#contact-form input[name=number]').val(),
+          subject: $('#contact-form input[name=tittle]').val(),
+          message: $('#contact-form textarea[name=msg]').val()
+      }
+
+      sendEmail(data);
+    }   
+
+    return false;
 });
 
 
